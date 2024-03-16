@@ -4,9 +4,24 @@ import java.lang.*;
 
 class Codechef {
 
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = brObject();
+        int testcases = inputInt(br);
+        StringBuilder sb = new StringBuilder();
+
+        while(testcases-- > 0) {
+            int n = inputInt(br);
+            int[] arr = inputArr(br);
+            int ans = 0;
+            // do some good thing here
+            sb.append(ans + "\n");
+        }
+
+        print(sb);
+    }
+
     // Input with Scanner
-    public static void main (String[] args) throws Exception
-	{
+    public static void main (String[] args) throws Exception {
         StrinBuilder sb = new StringBuilder();
 	    Scanner sc = new Scanner(System.in);
 	    int testcases = sc.nextInt();
@@ -21,7 +36,44 @@ class Codechef {
         print(sb);
 	}
 
-    /* HELPER FUNCTIONS: */
+    /** 
+     * HELPER VARIABLES
+     */
+
+    int max = Integer.MAX_VALUE;
+    int min = Integer.MIN_VALUE;
+    long maxL = Long.MAX_VALUE;
+    long minL = Long.MIN_VALUE;
+    int mod = 1e9 + 7;
+
+    /**
+     * HELPER FUNCTIONS
+     */
+
+    // Fast IO:
+    BufferedReader brObject() {
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(isr);
+        return br;
+    }
+
+    // inputInt:
+    int inputInt(BufferedReader br) {
+        return Integer.parseInt(br.readLine());
+    }
+
+    // inputArr:
+    int[] inputArr(BufferedReader br) {
+        String[] arrString = br.readLine().split(" ");
+        int len = arrString.length;
+        int[] arr = new int[len];
+        for(int i = 0; i < len; i++) {
+            arr[i] = Integer.parseInt(arrString[i]);
+        }
+
+        return arr;
+    }
+
     // find max in static array int:
     static int maxInArray(int[] arr) {
         int max = arr[0];

@@ -3,6 +3,21 @@ import java.io.*;
 import java.lang.*;
 
 public class Main {
+    
+    public static void main(String[] args) {
+        println("Hello World");
+        int[] staticArray = new int[]{1,2,3,4,5};
+        List<Integer> dynamicArray = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        println("staticArray =");
+        printArray(staticArray);
+        println("dynamicArray =");
+        printArray(dynamicArray);
+        println("maxInArray(staticArray) = " + maxInArray(staticArray));
+        println("maxInArray(dynamicArray) = " + maxInArray(dynamicArray));
+        println("minInArray(staticArray) = " + minInArray(staticArray));
+        println("minInArray(dynamicArray) = " + minInArray(dynamicArray));
+    }
+
     /* HELPER FUNCTIONS: */
     // find max in static array int:
     static int maxInArray(int[] arr) {
@@ -86,19 +101,5 @@ public class Main {
         long sum = 0;
         for(int element : arr) sum += element;
         return sum;
-    }
-
-    public static void main(String[] args) {
-        println("Hello World");
-        int[] staticArray = new int[]{1,2,3,4,5};
-        List<Integer> dynamicArray = new ArrayList<>(Arrays.asList(1,2,3,4,5));
-        println("staticArray =");
-        printArray(staticArray);
-        println("dynamicArray =");
-        printArray(dynamicArray);
-        println("maxInArray(staticArray) = " + maxInArray(staticArray));
-        println("maxInArray(dynamicArray) = " + maxInArray(dynamicArray));
-        println("minInArray(staticArray) = " + minInArray(staticArray));
-        println("minInArray(dynamicArray) = " + minInArray(dynamicArray));
     }
 }

@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-public class Codechef {
+class Codechef {
 
     // Input with Scanner
     public static void main (String[] args) throws Exception
@@ -10,7 +10,6 @@ public class Codechef {
         StrinBuilder sb = new StringBuilder();
 	    Scanner sc = new Scanner(System.in);
 	    int testcases = sc.nextInt();
-        
 	    while(testcases-- > 0) {
             int n = sc.nextInt();
             int[] arr = new int[n];
@@ -20,7 +19,6 @@ public class Codechef {
         }
 
         print(sb);
-
 	}
 
     /* HELPER FUNCTIONS: */

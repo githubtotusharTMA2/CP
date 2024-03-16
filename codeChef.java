@@ -116,3 +116,4 @@ class Codechef {
         return sum;
     }
 }
+

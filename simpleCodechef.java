@@ -18,4 +18,13 @@ class Codechef
 	    
 	    System.out.println(sb);
 	}
+
+	static int[] arrayInput(int n, Scanner sc) {
+		int[] arr = new int[n];
+		for(int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+		}
+
+		return arr;
+	}
 }
